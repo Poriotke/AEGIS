@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lock_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_shield"
+            android:tint="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvLockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOCK ACTIVE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:fontFamily="monospace"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tvLockSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily limit reached"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvPinDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="○○○○○○"
+            android:textSize="32sp"
+            android:textColor="@color/accent"
+            android:fontFamily="monospace"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.3" />
+
+        <GridLayout
+            android:id="@+id/pinPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn1" style="@style/PinButton" android:text="1" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2" style="@style/PinButton" android:text="2" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn3" style="@style/PinButton" android:text="3" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn4" style="@style/PinButton" android:text="4" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn5" style="@style/PinButton" android:text="5" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn6" style="@style/PinButton" android:text="6" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn7" style="@style/PinButton" android:text="7" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn8" style="@style/PinButton" android:text="8" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn9" style="@style/PinButton" android:text="9" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnClear" style="@style/PinButton" android:text="C" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn0" style="@style/PinButton" android:text="0" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnter" style="@style/PinButton" android:text="✓" />
+        </GridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:text="🚨 EMERGENCY DIALER"
+            android:textColor="#FF4444"
+            android:backgroundTint="#330000"
+            app:strokeColor="#FF4444"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+</FrameLayout>

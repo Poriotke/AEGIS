@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AEGIS</string>
+    <string name="channel_name">AEGIS Monitor</string>
+    <string name="channel_description">Real-time screen time tracking service</string>
+</resources>
